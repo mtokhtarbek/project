@@ -1,0 +1,105 @@
+.reviews{
+    padding: 100px 0;
+    background-color: #332208;
+    color: #fefefe;
+}
+
+.reviews__title{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 70px;
+}
+
+.reviwes__item{
+    border: 1px solid  #C5AC2D;
+    margin-right: 30px;
+    padding: 45px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 270px;
+    min-height: 300px;
+    text-align: center;
+}
+
+.reviews__item-title{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  
+}
+.reviwes__slider .slick-dots button{
+    background-color: #C5AC2D;
+}
+.reviwes__slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.reviwes__slider button{
+    margin: 0 5px;
+}
+.feedback{
+ padding: 100px 0;
+}
+.feedback-inner{
+    display: flex;
+    align-items: center;
+}
+.feedback__image{
+    width: 50%;
+}
+.feedback__form{
+    width: 415px;
+    margin: 0 auto;
+}
+.feedback__title{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 5px;
+}
+.feedback__subtitle{
+    padding-bottom: 30px; 
+}
+.feedback__input{
+    display: block;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    width: 100%;
+}
+.feedback__input::placeholder{
+    line-height: 19px;
+    font-size: 16px;
+    color:#332208;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+.feedback__btn{
+    text-transform: uppercase;
+    color:#fefefe;
+    background-color: #C5AC2D;
+    border: 1px solid transparent;
+    padding: 16px 36px 15px;
+    margin-top: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: all .5s;
+}
+.feedback__btn:hover{
+    color:#C5AC2D;
+    background-color:#fefefe;
+    border: 1px solid #C5AC2D;
+}
+
+@media screen and (max-width: 750px){
+    .feedback__image{
+        display: none;
+    }
+}

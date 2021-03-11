@@ -1,0 +1,34 @@
+.footer{
+    padding: 100px 0 24px;
+    background-color:#332208;
+}
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+}
+.footer__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.footer__social-link{
+    margin: 0 15px;
+}
+@media screen and (max-width:950px){
+    .footer .menu{
+        display: none;
+    }
+
+}
+@media screen and (max-width:450px){
+    .footer__top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .phone{
+        margin-top: 20px;
+    }
+}

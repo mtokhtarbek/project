@@ -1,0 +1,133 @@
+.benefist{
+    padding: 10px 0;
+}
+.benefest__title{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 50px;
+}
+.benefist__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.benefist__list{
+    list-style: none;
+    width: 300px;
+    padding-right: 17px;
+}
+.benefist__list-item{
+    margin-bottom: 27px;
+    padding-right: 26px;
+    position: relative;
+    text-align: right;
+}
+.benefist__list-item:nth-child(1),
+.benefist__list-item:nth-child(7){
+    margin-right: 10px;
+}
+.benefist__list-item:nth-child(2),
+.benefist__list-item:nth-child(6){
+    margin-right: 47px;
+}
+.benefist__list-item:nth-child(3),
+.benefist__list-item:nth-child(5){
+    margin-right: 99px;
+}
+.benefist__list-item:nth-child(4){
+    margin-right: 145px;
+}
+.benefist__list-item::after{
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+    background-color:  #1b1b1b;;
+    right: 0;
+    top:3px;
+}
+
+.benefist__content{
+    text-align: right;
+    width: 300px;
+}
+.benefist__text{
+    margin-bottom: 30px;
+
+}
+.benefist__text + .benefist__text{
+    width: 267px;
+    margin-left: auto;
+}
+.video__popup{
+    background-color: #c5ac2d;
+    color: #fefefe;
+    text-transform:uppercase;
+    padding: 6px 34px 6px 64px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+.video__popup::before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background: url("/images/PLAY.svg");
+    left: 34px;
+    top:12px;
+   
+}
+.benefist__icon{
+    height: 16px;
+    width: 16px;
+    background: url('/images/PLAY.svg') center center /column no-repeat;
+}
+@media screen and (max-width:1250px){
+    .benefist__images{
+        width: 40%;
+    }
+}
+@media screen and (max-width:1020px){
+    .benefist__images{
+        width: 55%;
+    }
+    .benefist__items{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .benefist__content{
+        width: 100%;
+        text-align: center;
+        margin: 49px;
+    }
+    .benefist__text + .benefist__text{
+        width: 100%;
+    }
+}
+@media screen and (max-width:701px){
+    .benefist__images{
+        width: 70%;
+    }
+    .benefist__list{
+        padding-right: 0;
+    }
+    .benefist__list-item{
+        text-align: left;
+        padding-right: 0;
+        padding-left: 26px;
+    }
+    .benefist__list-item::after{
+        left:0;
+        right: auto;
+    }
+}
+@media screen and (max-width:350px){
+    .benefist__list{
+        width: 100%;
+    }
+}
